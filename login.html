@@ -1,0 +1,139 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=div, initial-scale=1.0">
+    <title>Login</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <style>
+        body{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+                background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+        }
+    
+        .contain{
+                width: 420px;
+                background: cadetblue;
+                color: 011F5B;
+                border-radius: 40px;
+                padding: 30px 40px;
+                box-shadow: 0 0 10px darkolivegreen;
+        }
+    
+        .contain h2{
+            font-size: 26px;
+            text-align: center;
+        }
+    
+        .contain .input-box{
+            position: relative;
+            width: 100%;
+            height: 50px;
+            background:  cadetblue;
+            margin: 30px 0;
+            
+        }
+    
+        .input-box input{
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            border: none;
+            outline: none;
+            border: 2px solid darkgreen;
+            border-radius: 10px;
+        }
+    
+        .input-box input::placeholder{
+            color: 011F5B;
+        }
+    
+        .input-box i{
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 20px;
+        }
+    
+        .contain .remember-forget{
+            display: flex;
+            justify-content:space-between;
+            font-size: 14.5px;
+            margin: -15px 0 15px;
+        }
+    
+        .remember-forget label input{
+            accent-color: aqua;
+            margin-right: 3px;
+        }
+    
+        .remember-forget a{
+            color: #011F5B;
+            text-decoration: none;
+        } 
+    
+        .remember-forget a :hover{
+            text-decoration: underline;
+        }
+    
+        .contain .btn{
+            width: 100%;
+            height: 35px;
+            background: darkolivegreen;
+            border: none;
+            outline: none;
+            border-radius: 20px;
+            box-shadow: 0 0 10px wheat;
+            font-size: 16px;
+            color: 011F5B;
+    
+        }
+    
+        .contain .register-link{
+            font-size: 14.5px;
+            text-align: center;
+            margin-top: 20px;
+        }
+    
+        .register-link p a{
+            color: #011F5B;
+            text-decoration: none;
+        }
+    
+        .register-link p a :hover{
+            text-decoration: underline;
+        }
+    </style>
+
+    <div class="img">
+        <img src="./images/Watercolor Eucalyptus Leaves Set, transparent background - 480x480.png" alt="">
+    </div>
+
+    <div class="contain">
+        <form action="">
+            <h2>login</h2>
+                <div class="input-box">
+                    <input type="text" placeholder="Username" required> 
+                    <i class='bx bx-user'></i>     
+                </div>
+                <div class="input-box">
+                    <input type="text" placeholder="Password" required>
+                    <i class='bx bxs-lock-alt'></i>
+                 </div>
+                 <div class="remember-forget">
+                    <label>
+                            <input type="checkbox">Remember me </label><a href="">Forget Password</a>
+                </div>
+                <button type="Submit" class="btn">Login</button>
+                <div class="register-link">
+                    <p>Don't have an account?<a href="">Register</a></p>
+                </div>
+        </form>
+    </div>
+</body>
+</html>
